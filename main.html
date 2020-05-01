@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Start Quiz</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<div class="container">
+    <div id="start_view">
+        <h1>Algebra Quiz</h1>
+
+        <table id="top_scores">
+        </table>
+
+        <div class="button capitalize" id="start_button">
+            start quiz
+        </div>
+    </div>
+    <div id="quiz_view">
+        <h1 class="quiz_time">Algebra for Dummies</h1>
+        <h1 class="quiz_finished">Quiz Finished!</h1>
+        <p class="quiz_finished" id="score"></p>
+        <div class="save_result_buttons quiz_finished">
+            <div class="button capitalize " id="save_results_without_stats_button">
+                save results without statistics
+            </div>
+            <div class="button capitalize" id="save_results_with_stats_button">
+                save results with statistics
+            </div>
+        </div>
+        <div class="addons">
+            <p class="addons_item" id="question_number"></p>
+            <p class="addons_item" id="timer">00:00</p>
+            <p class="addons_item" id="penalty"></p>
+        </div>
+        <p id="question"></p>
+        <div id="answers"></div>
+        <div class="buttons_container">
+            <div class="button question_button capitalize quiz_time" id="cancel_button">
+                cancel
+            </div>
+            <div class="right_side_buttons_container">
+                <div class="disabled_button question_button capitalize quiz_time" id="finish_button">
+                    finish
+                </div>
+                <div class="disabled_button question_button capitalize" id="previous_question_button">
+                    previous
+                </div>
+                <div class="button capitalize" id="next_question_button">
+                    next
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cancel_view">
+        <h1>Quiz Canceled</h1>
+        <div class="button capitalize" id="restart_button">
+            go back to start page
+        </div>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
